@@ -1,0 +1,17 @@
+{
+    "name": "tamer-inawy/contact-form",
+    "version": "0.0.1",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Tamer Inawy",
+            "email": "tamer.inawy@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "TamerInawy\\ContactForm\\": "src/"
+        }
+    },
+    "require": {}
+}
