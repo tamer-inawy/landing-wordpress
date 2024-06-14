@@ -1,3 +1,6 @@
+#!/usr/bin/env bash
+
+dir=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 while getopts u:p: flag
 do
@@ -13,7 +16,9 @@ then
   exit 1
 fi
 
-sed -i "s/WP_USERNAME=/WP_USERNAME=$username/" .env.local
-sed -i "s/WP_PASSWORD=/WP_PASSWORD=$password/" .env.local
+sed -i "s/WP_USERNAME=$/WP_USERNAME=$username/" $dir/.env.local
+sed -i "s/WP_PASSWORD=$/WP_PASSWORD=$password/" $dir/.env.local
 
-docker-compose cp ./.env.local next:/app/landingpage/.env.local
+docker-compose cp $dir/.env.local next:/app/landingpage/.env.local
+
+exit 0
