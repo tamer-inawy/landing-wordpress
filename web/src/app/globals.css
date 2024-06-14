@@ -1,0 +1,62 @@
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+html,
+body,
+main,
+div {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: Univers;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Univers;
+  src: url('/fonts/Univers.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 300 800;
+}
+
+@font-face {
+  font-family: Univers;
+  src: url('/fonts/Univers-Bold.woff2') format('woff2');
+  font-style: bold;
+  font-weight: 300 800;
+}
+
+@font-face {
+  font-family: Univers;
+  src: url('/fonts/Univers-BoldOblique.woff2') format('woff2');
+  font-style: oblique;
+  font-weight: 300 800;
+}
+
+@font-face {
+  font-family: Univers;
+  src: url('/fonts/Univers-Light.woff2') format('woff2');
+  font-style: light;
+  font-weight: 300 800;
+}
+
+@font-face {
+  font-family: Univers;
+  src: url('/fonts/Univers-LightOblique.woff2') format('woff2');
+  font-style: oblique;
+  font-weight: 300 800;
+}
+
+@font-face {
+  font-family: Univers;
+  src: url('/fonts/Univers-Oblique.woff2') format('woff2');
+  font-style: oblique;
+  font-weight: 300 800;
+}
+
+.slide {
+  width: 100%;
+  min-height: 100vh;
+}

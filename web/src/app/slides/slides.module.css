@@ -1,0 +1,480 @@
+/* -------------------------------- slide1 -------------------------------- */
+.slide {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.slide1 {
+  background-image: url('/images/bg.jpg');
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.preHeader {
+  flex: 0.5;
+}
+
+.header {
+  padding: 0.7rem;
+  color: white;
+  text-align: center;
+}
+
+.mainHeader {
+  width: 90%;
+  font-size: 3.5rem;
+  font-style: oblique;
+}
+
+.subHeader {
+  width: 60%;
+  font-size: 1.2rem;
+  font-family: Univers;
+}
+
+/* -------------------------------- slide2 -------------------------------- */
+.slide2 {
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  min-height: 700px;
+  height: 100vh;
+}
+
+.about {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  line-height: 1.25;
+  width: 60%;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.logo {}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.text {
+  font-size: 1rem;
+}
+
+.slide2 .button button {
+  padding: 15px 25px;
+  font-size: 1.5rem;
+  background-color: white;
+  border-color: brown;
+  margin: 1rem;
+}
+
+.button>button:hover {
+  background-color: cornsilk;
+  cursor: pointer;
+}
+
+.show {
+  width: 100%;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.videobox {
+  background-image: url('/images/video-thumb.png');
+  background-position: center;
+  background-size: cover;
+  width: 60%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.playButton {
+  width: 20%;
+  background-color: rgba(255, 255, 255, 0.40);
+  display: inline-block;
+  border: solid thin #8B2351;
+  border-radius: 50%;
+}
+
+.playButton:hover {
+  background-color: rgba(255, 255, 255, 0.50);
+  cursor: pointer;
+}
+
+.rectangle {
+  width: 100%;
+  height: 100%;
+  padding: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.videoPlayer {
+  width: 100%;
+  height: 100%;
+}
+
+.stopped .videoPlayer {
+  /* display: none; */
+}
+
+.videobox>img {}
+
+
+/* -------------------------------- slide3 -------------------------------- */
+.slide3 {
+  background-image: url('/images/releases-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+}
+
+.slide3 .release {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 3rem 2rem;
+  border: 2px rgba(0, 0, 0, 0) solid;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+.release:hover {
+  background-color: rgba(0, 0, 0, 0.55);
+  border: 2px rgba(0, 0, 0, 0.1) solid;
+  cursor: pointer;
+}
+
+.releaseContainer {
+  transition-property: all;
+  transition-duration: 1s;
+  transform: translateY(50%);
+}
+
+.release:hover>.releaseContainer {
+  transform: translateY(0);
+}
+
+.plus {
+  font-size: 3rem;
+  border: solid 0.1rem white;
+  border-radius: 50%;
+  /* display: inline-block; */
+  height: 4rem;
+  width: 4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  line-height: 1.2;
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+.release:hover>.releaseContainer>.plus {
+  color: black;
+  background-color: white;
+}
+
+.releaseContainer>.title {
+  font-size: 2rem;
+}
+
+.releaseContainer>.phrase {
+  margin-top: 3rem;
+}
+
+/* -------------------------------- slide4 -------------------------------- */
+.slide4 {
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.block {
+  width: 35%;
+}
+
+.left {
+  background-image: url('/images/left.png');
+  background-size: cover;
+  background-position: right;
+  height: 500px;
+}
+
+.right {
+  padding: 20px 1rem 20px 3rem;
+}
+
+.right>.title {
+  font-size: 1.5rem;
+}
+
+.right>.text {
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+.right button {
+  background-color: rgba(139, 35, 81, 1);
+  color: white;
+  border: none;
+  padding: 20px;
+
+}
+
+.right button:hover {
+  background-color: rgba(139, 35, 81, 0.8);
+  cursor: pointer;
+}
+
+/* -------------------------------- slide5 -------------------------------- */
+.slide5 {
+  background-image: linear-gradient(to left, rgba(23, 41, 56, 1), rgba(255, 255, 255, 0)), url('/images/form-bg.png');
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  justify-content: flex-end;
+  padding: 8rem;
+}
+
+.formContainer {
+  width: 40%;
+  padding: 2rem;
+  color: white;
+  background: rgba(23, 41, 56, 1);
+  line-height: 2;
+}
+
+.formContainer title,
+.formContainer text {}
+
+.formInput {
+  margin: 1rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+.formInput>input,
+.formInput>textarea {
+  background-color: black;
+  color: white;
+  border: black solid;
+  border-radius: 5px;
+  padding: 0.75rem;
+  width: 90%;
+}
+
+.formInput>input::placeholder,
+.formInput>textarea::placeholder {
+  color: white;
+}
+
+.formInput>button {
+  width: 100%;
+  padding: 0.5rem 0;
+  border: solid 2px white;
+}
+
+.formInput>button:hover {
+  cursor: pointer;
+  border: solid 2px black;
+}
+
+.message {
+  font-size: 0.75rem;
+  text-align: center;
+  border: dashed 1px green;
+  background-color: rgba(0, 128, 0, 0.4);
+}
+
+/* ========================= breakpoints ========================= */
+@media only screen and (max-width: 1450px) {
+  .releaseContainer>.phrase {
+    /* margin-top: 5rem; */
+  }
+
+  .releaseContainer {
+    transform: translateY(55%);
+  }
+}
+
+@media only screen and (max-width: 1210px) {
+
+  .releaseContainer {
+    transform: translateY(60%);
+  }
+
+}
+
+@media only screen and (max-width: 840px) {
+
+  .releaseContainer {
+    transform: translateY(70%);
+  }
+
+  .slide4 .right .title {
+    font-size: 1.25rem;
+  }
+
+  .slide4 .right .text {
+    font-size: 0.85rem;
+  }
+
+  .slide5 .formContainer {
+    width: 50%;
+  }
+
+}
+
+@media only screen and (max-width: 720px) {
+
+  .slide2 .button button {
+    padding: 10px 15px;
+    font-size: 1rem;
+  }
+
+  .slide3 {
+    flex-direction: column;
+  }
+
+  .release {
+    background-color: rgba(0, 0, 0, 0.55);
+    background-image: url('/images/releases-bg.jpg');
+    border: 2px rgba(0, 0, 0, 0.1) solid;
+    background-blend-mode: color;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+
+  }
+
+  .plus {
+    color: black;
+    background-color: white;
+  }
+
+  .release .phrase {
+    margin-right: 5rem;
+  }
+
+  .releaseContainer {
+    transform: translateY(0);
+  }
+
+  .slide4 {
+    flex-direction: column;
+    margin: 3rem 0;
+  }
+
+  .slide4 .right button {
+    width: 100%;
+  }
+
+  .block {
+    width: 70%;
+  }
+
+  .slide5 {
+    padding: 0;
+  }
+
+  .slide5 .formContainer {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 420px) {
+  .about>.text>.title {
+    font-size: 1rem;
+  }
+
+  .about>.text {
+    font-size: 0.75rem;
+  }
+}
+
+
+@media only screen and (min-width: 2000px) {
+
+  /* slide 1 */
+  .mainHeader {
+    font-size: 4.5rem;
+  }
+
+  .subHeader {
+    font-size: 2.2rem;
+  }
+
+  /* slide 2 */
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .text {
+    font-size: 2rem;
+  }
+
+  .button>button {
+    font-size: 2rem;
+  }
+
+  /* slide 3 */
+
+  .releaseContainer {
+    transform: translateY(55%);
+  }
+
+  .releaseContainer>.title {
+    font-size: 3rem;
+  }
+
+  .releaseContainer>.phrase {
+    margin-top: 5rem;
+    font-size: 1.5rem;
+  }
+
+  /*  */
+
+
+  .right>.title {
+    font-size: 2.5rem;
+  }
+
+  .right>.text {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  }
+
+
+  .right button {
+    font-size: 1.25rem;
+
+  }
+
+
+  .left {
+    height: 550px;
+  }
+
+}
