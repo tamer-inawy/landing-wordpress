@@ -21,4 +21,6 @@ sed -i "s/WP_PASSWORD=$/WP_PASSWORD=$password/" $dir/.env.local
 
 docker-compose cp $dir/.env.local next:/app/landingpage/.env.local
 
+echo "Done!"
+
 exit 0
