@@ -20,7 +20,7 @@ docker-compose up -d
 
 3. Open [http://localhost/](http://localhost/) and follow the instructions to setup WordPress.
 
-4. Create an application password on WordPress following [these instructions](https://wordpress.com/support/security/two-step-authentication/application-specific-passwords/#add-a-new-application-password).
+4. Create an application password on WordPress following [these instructions](https://agilitywriter.ai/guide/application-password-for-wordpress/).
 
 5. Activate the Contact Form Plugin at <http://localhost/wp-admin/plugins.php> by clicking Activate under the plugin name.
 ![Activate the Contact Form Plugin!](demo.png "Activate the Contact Form Plugin!")
@@ -29,7 +29,7 @@ docker-compose up -d
 
     a. Use update-credentials.sh by applying the following command from the project root. Replace \<username\> and \<password\> with the actual username and password from step number 4, remove the spaces from the password:
     ```
-    bash web/update-credentials -u <username> -p <password>
+    bash web/update-credentials.sh -u <username> -p <password>
     ```
 
     b. Manually update the file web/.env.local with the username and password, then copy it to the container using the following command.
