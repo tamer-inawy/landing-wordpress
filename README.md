@@ -27,7 +27,7 @@ docker-compose up -d
 
 6. Update the landing page container with the credentials (username and application password) using one of the following methods:
 
-    a. Use update-credentials.sh by applying the following command from the project root. Replace \<username\> and \<password\> with the actual username and password from step number 4:
+    a. Use update-credentials.sh by applying the following command from the project root. Replace \<username\> and \<password\> with the actual username and password from step number 4, remove the spaces from the password:
     ```
     bash web/update-credentials -u <username> -p <password>
     ```
