@@ -18,11 +18,11 @@ Below are the instructions to install the project on your local machine using Do
 docker-compose up -d
 ```
 
-3. Open [http://localhost/](http://localhost/) and follow the instructions to setup WordPress.
+3. Wait a few minutes for the containers to start then open [http://localhost/](http://localhost/) and follow the instructions to setup WordPress.
 
-4. Create an application password on WordPress following [these instructions](https://agilitywriter.ai/guide/application-password-for-wordpress/).
+4. Create an application password on WordPress following [these instructions](https://agilitywriter.ai/guide/application-password-for-wordpress/). Don't forget to save the password somewhere.
 
-5. Activate the Contact Form Plugin at <http://localhost/wp-admin/plugins.php> by clicking Activate under the plugin name.
+5. Activate the Contact Form Plugin at <http://localhost/wp-admin/plugins.php> by clicking Activate under the plugin name (Contact Form Plugin).
 ![Activate the Contact Form Plugin!](demo.png "Activate the Contact Form Plugin!")
 
 6. Update the landing page container with the credentials (username and application password) using one of the following methods:
