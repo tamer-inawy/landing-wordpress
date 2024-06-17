@@ -40,7 +40,7 @@ class ClassCF
       'labels'       => $lables,
       'show_in_rest' => true,
       'rest_namespace' => $this->rest_namespace,
-      'rest_base' => 'contact-form',
+      'rest_base' => $this->rest_route,
       'publicly_queryable' => true,
       'show_ui' => true,
       'delete_with_user' => false,
