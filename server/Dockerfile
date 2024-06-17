@@ -7,7 +7,7 @@ WORKDIR /app/contact-form
 RUN composer install
 
 # Phase 2
-FROM wordpress:latest
+FROM wordpress:6.5.3-php8.2
 
 RUN mkdir /var/www/html/wp-content/plugins/contact-form
 
