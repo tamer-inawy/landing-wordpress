@@ -1,5 +1,5 @@
 # Challenge Solution
-This project provides a solution for the [challenge from Webcicient](https://doc.clickup.com/9015258856/p/h/8cnkvq8-17615/a53c839aef0d9a0).
+This project provides a solution for the [challenge from Webicient](https://doc.clickup.com/9015258856/p/h/8cnkvq8-17615/a53c839aef0d9a0).
 
 The project consists of a simple landing page and a basic WordPress plugin that sets up a REST endpoint for a contact form submission on the WordPress site where the plugin is activated.
 
