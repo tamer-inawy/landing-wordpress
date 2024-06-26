@@ -12,7 +12,8 @@ done
 
 if [ -z "$username" ] || [ -z "$password" ]
 then
-  echo "Please provide a username and a password"
+  echo "Missing parameter(s)...!!"
+  echo "Usage: bash update-credentials.sh -u <username> -p <password>"
   exit 1
 fi
 
